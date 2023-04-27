@@ -1,4 +1,4 @@
-# Pet Radar (Front End Mobile Application) - GROUP 1 
+# Pet Radar Mobile Application
 
 This repository contains the code of mobile application for the project PETRADAR. For this project we have used Bare React Native Workflow for developing this application.
 
