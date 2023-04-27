@@ -1,0 +1,60 @@
+image: openjdk:11-jdk
+
+variables:
+  ANDROID_COMPILE_SDK: "33"
+  ANDROID_BUILD_TOOLS: "33.0.0"
+  ANDROID_SDK_TOOLS: "9477386"
+
+# Packages installation before running script
+before_script:
+  - apt-get --quiet update --yes
+  - apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1
+  - export ANDROID_HOME="${PWD}/android-home"
+  - install -d $ANDROID_HOME
+  - wget --output-document=$ANDROID_HOME/cmdline-tools.zip https://dl.google.com/android/repository/commandlinetools-linux-${ANDROID_SDK_TOOLS}_latest.zip
+  - pushd $ANDROID_HOME
+  - unzip -d cmdline-tools cmdline-tools.zip
+  - pushd cmdline-tools
+  - mv cmdline-tools tools || true
+  - popd
+  - popd
+  - export PATH=$PATH:${ANDROID_HOME}/cmdline-tools/tools/bin/
+  - sdkmanager --version
+  - yes | sdkmanager --licenses || true
+  - sdkmanager "platforms;android-${ANDROID_COMPILE_SDK}"
+  - sdkmanager "platform-tools"
+  - sdkmanager "build-tools;${ANDROID_BUILD_TOOLS}"
+  - chmod 777 android/gradlew
+  - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+  - source ~/.nvm/nvm.sh
+  - nvm install 18.12.0
+  - nvm use 18.12.0
+  - npm install
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH="$HOME/.yarn/bin:$PATH"
+  - yarn install
+
+stages: # List of stages for jobs, and their order of execution
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - yarn install
+    # - cd ios && pod install --repo-update && cd ../
+    - cd android/ && ./gradlew assembleRelease
+  artifacts:
+    paths:
+      - "/android"
+
+test:
+  stage: test
+  script:
+    - echo "Testing"
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deployment"

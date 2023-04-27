@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "232303670255",
+    "project_id": "petradar-4ac4c",
+    "storage_bucket": "petradar-4ac4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:232303670255:android:51e7acf41182f28c1b3c1a",
+        "android_client_info": {
+          "package_name": "com.petradarft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "232303670255-lph1p86dqlb6jmia3e2smom2p7h9k1os.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.petradarft",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "232303670255-1i9aoblsecn17ke3ovipjgdeo4ucdpvg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRyBpEU3TLHtufkvbCLuqJ2-NyaAx__sE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "232303670255-1i9aoblsecn17ke3ovipjgdeo4ucdpvg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>232303670255-e1m6s0fj53150khocab2706i7hqadl7k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.232303670255-e1m6s0fj53150khocab2706i7hqadl7k</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>232303670255-lph1p86dqlb6jmia3e2smom2p7h9k1os.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC7-58erMzarDv4uBeZqz3iYpRvv25jXXA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>232303670255</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.petradarft</string>
+	<key>PROJECT_ID</key>
+	<string>petradar-4ac4c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>petradar-4ac4c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:232303670255:ios:11c92a55a2f552cb1b3c1a</string>
+</dict>
+</plist>
