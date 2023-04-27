@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { store } from "../../redux/store";
 
 const axiosInstance = axios.create({
-    baseURL: "http://129.173.67.181:8085",  
+    baseURL: "http://localhost:8085",
 })
 
 axiosInstance.interceptors.request.use(
