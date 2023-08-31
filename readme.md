@@ -52,6 +52,12 @@
 
 ### Setup
 
+> Run the backend application
+
+```shell
+$ cd backend && mvn spring-boot:run
+```
+
 > Install npm packages
 
 ```shell
@@ -63,6 +69,8 @@ $ cd frontend && npm install
 ```shell
 $ cd ios && pod install && cd ..
 ```
+
+> Run the mobile application
 
 ```shell
 $ npm react-native run-android
