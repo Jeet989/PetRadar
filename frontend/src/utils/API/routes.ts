@@ -1,5 +1,5 @@
 // Base URL for the API
-export const baseURL = 'http://localhost:8085/';
+export const baseURL = 'http://129.173.67.181:8085/';
 
 // Authentication routes
 export const register = baseURL + 'user/register';

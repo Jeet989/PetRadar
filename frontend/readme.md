@@ -1,6 +1,12 @@
-# Pet Radar Mobile Application
+# Pet Radar (Front End Mobile Application) - GROUP 1 
 
-This repository contains the code of mobile application for the project PETRADAR. For this project we have used Bare React Native Workflow for developing this application.
+This repository contains the code of mobile application for the project PETRADAR (Client Team - 4 and Development Team - 1). For this project we have used Bare React Native Workflow for developing this application.
+
+To access the backend of this application here is the link to that repository [PetRadar Backend](https://git.cs.dal.ca/courses/2023-winter/csci-5308/group01.git)
+
+To access the web page of this application here is the link to that repository [PetRadar Web](https://git.cs.dal.ca/parshva/petradar_web.git)
+
+Here are the steps for creating the development environment for this project:
 
 ### These steps are for the users having OS as MAC
 
@@ -176,3 +182,25 @@ If the user finds the pet then he can select the option ‘Found?’ and then th
 [![Profile Screen](https://i.postimg.cc/xjXLMPRd/Whats-App-Image-2023-04-09-at-7-03-57-PM-3.jpg)](https://postimg.cc/vDd1dfCR)
 <br />
 If you click on the third icon it will direct you to the profile settings page, see above figure. Here, it shows the options of updating the ‘Personal Details’, ‘Your Posts’, update ‘Pet Details’, ‘Notification’ access, and ‘Delete Account’ options. If you are not using the app frequently then you can also click on the ‘Logout’ option and it will log out of your account.
+
+### Group Presentation
+[Pet Radar Presentation](https://git.cs.dal.ca/courses/2023-winter/csci-5308/group01/-/tree/production/)
+
+### Contribution Statement
+[Contribution Statement](https://git.cs.dal.ca/courses/2023-winter/csci-5308/group01/-/tree/production/)
+
+### Project Assessment
+[Project Assessment](https://git.cs.dal.ca/courses/2023-winter/csci-5308/group01/-/tree/production/)
+
+### Development Team
+- Group 1
+
+### Contributors
+- [Jeet Mehta](mailto:jt429386@dal.ca) Banner Id: B00945900
+- [Sankeerth Rani](mailto:sn501304@dal.ca) Banner Id: B00932027
+- [Dhruvin Dankhara](mailto:dh793203@dal.ca) Banner Id: B00926164
+- [Parshva Shah](mailto:pr371441@dal.ca) Banner Id: B00928689
+- [Lokeshwar Tabjula](mailto:lk544219@dal.ca) Banner Id: B00936909
+
+### TA
+- [Anirudh Hosur](mailto:an516658@dal.ca)
