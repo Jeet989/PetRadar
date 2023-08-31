@@ -1,114 +1,74 @@
-# Pet Radar (Backend Application) - Group 1
+# PetRadar
 
-This repository contains the code of backend application for the project PETRADAR (Client Team - 4 and Development Team - 1). For this project we have used Springboot, mysql & AWS for developing this application.
+> PetRadar is a mobile based application which helps to find lost pets with their owners. Here the owner will create a post which will have a basic information about where the pet was last located and then the post will be shared with the other users via location based feeds. Once the owner posts the feed, all other users within that range will receive a push notification about the lost pet. Once a samaritan has found the pet they can scan the QR Code (generated at time of pet registration) and the owner can be notified about the pet being found by using the contact information provided by the owner at the time of registration.
 
-To access the Frontend (Mobile Application) of this application here is the link to that repository [PetRadar FrontEnd](https://git.cs.dal.ca/jeet/petradar-fn.git)
+## Key Features of the Application
 
-To access the web page of this application here is the link to that repository [PetRadar Web](https://git.cs.dal.ca/parshva/petradar_web.git)
+- OAuth Authentication using Google
+- Google Maps
+- Location Based Feeds
+- Push Notification Service
+- QR Code
+- Native Calling Feature
 
-## Requirements / Dependencies
+## Tools & Technologies Used
 
-For building and running the application you need:
+- [![React Native][ReactNative]][ReactNative-url]
+- [![Spring Boot][SpringBoot]][SpringBoot-url]
+- [![Google Maps][GoogleMaps]][GoogleMaps-url]
+- [![OneSignal][OneSignal]][OneSignal-url]
+- [![Firebase][Firebase]][Firebase-url]
+- [![AWSS3][AWSS3]][AWSS3-url]
 
-- [JDK 17](https://www.oracle.com/java/technologies/downloads/#java17)
-- [Maven 3](https://maven.apache.org)
+[ReactNative]: https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
+[ReactNative-url]: https://reactnative.dev/
+[SpringBoot]: https://img.shields.io/badge/spring_boot-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white
+[SpringBoot-url]: https://spring.io/projects/spring-boot
+[GoogleMaps]: https://img.shields.io/badge/google_maps-%234285F4.svg?style=for-the-badge&logo=google-maps&logoColor=white
+[GoogleMaps-url]: https://cloud.google.com/maps-platform
+[OneSignal]: https://img.shields.io/badge/OneSignal-%2300B0FF.svg?style=for-the-badge&logo=OneSignal&logoColor=white
+[OneSignal-url]: https://onesignal.com/
+[Firebase]: https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase
+[Firebase-url]: https://firebase.google.com/
+[AWSS3]: https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white
+[AWSS3-url]: https://aws.amazon.com/
 
-## Installing Maven 3.8.7 and Java using OpenJDK 19.0.2:
+## Installation
 
-## Windows:
+### Prerequisites
 
-- Download OpenJDK 19.0.2 from https://jdk.java.net/archive/ using the Windows ZIP archive.
-- Extract the ZIP archive to a directory of your choice. For example, you can extract it to "C:\Program Files\Java\jdk-19.0.2".
-- Set the JAVA_HOME environment variable to the installation directory of the JDK. To do this, open the Control Panel and go to System and Security -> System -> Advanced system settings -> Environment Variables. Under System Variables, click New and set the following values:
+- [Node.js](https://nodejs.org/en/)
+- [Java](https://www.java.com/en/)
+- [Android Studio](https://developer.android.com/studio)
+- [Xcode](https://developer.apple.com/xcode/)
+- [AWS Account](https://aws.amazon.com/)
+- [Google Maps API Key](https://developers.google.com/maps/documentation/javascript/get-api-key)
+- [OneSignal API Key](https://onesignal.com/)
+- [Firebase API Key](https://firebase.google.com/)
 
-```
- Variable name: JAVA_HOME
- Variable value: C:\Program Files\Java\jdk-19.0.2
-```
+### Clone
 
-- Download Maven 3.8.7 from https://maven.apache.org/download.cgi.
-- Extract the ZIP archive to a directory of your choice. For example, you can extract it to "C:\Program Files\Maven\apache-maven-3.8.7".
-- Set the MAVEN_HOME environment variable to the installation directory of Maven. To do this, go to Environment Variables again and set the following values:
+- Clone this repo to your local machine using `git clone https://github.com/Jeet989/PetRadar.git`
 
-```
-Variable name: MAVEN_HOME
-Variable value: C:\Program Files\Maven\apache-maven-3.8.7
-```
+### Setup
 
-- Add the bin directories of both Java and Maven to the PATH environment variable. To do this, edit the PATH variable under System Variables and add the following values:
-
-```
-%JAVA_HOME%\bin;%MAVEN_HOME%\bin;
-```
-
-- Open a new command prompt and verify that both Java and Maven are installed correctly by running the following commands:
-
-```shell
-java --version
-mvn --version
-```
-
-## MacOS:
-
-- Download OpenJDK 19.0.2 from https://jdk.java.net/archive/ using the macOS DMG image.
-- Double-click the DMG image to mount it.
-- Double-click the PKG file to start the installation process.
-- Follow the instructions in the installer to install OpenJDK. By default, it will be installed to /Library/Java/JavaVirtualMachines/jdk-19.0.2.jdk/Contents/Home/.
-- Set the JAVA_HOME environment variable to the installation directory of the JDK. To do this, open Terminal and run the following command:
+> Install npm packages
 
 ```shell
-echo "export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-19.0.2.jdk/Contents/Home/" >> ~/.bash_profile
+$ cd frontend && npm install
 ```
 
-- Download Maven 3.8.7 from https://maven.apache.org/download.cgi.
-- Extract the ZIP archive to a directory of your choice. For example, you can extract it to "/usr/local/apache-maven-3.8.7".
-- Set the MAVEN_HOME environment variable to the installation directory of Maven. To do this, open Terminal and run the following command:
+> Install pod dependencies
 
 ```shell
-echo "export MAVEN_HOME=/usr/local/apache-maven-3.8.7" >> ~/.bash_profile
+$ cd ios && pod install && cd ..
 ```
-
-- Add the bin directories of both Java and Maven to the PATH environment variable. To do this, edit the ~/.bash_profile file and add the following values:
-
-```
-export PATH=$JAVA_HOME/bin:$MAVEN_HOME/bin:$PATH
-```
-
-- Save and close the file.
-- Refresh the Terminal session by running the following command:
-
-```
-source ~/.bash_profile
-```
-
-- Verify that both Java and Maven are installed correctly by running the following commands:
-
-```
-java --version
-mvn -version
-```
-
-## Running the application locally
-
-Clone the project into your local machine.
-Check out to \***\*\_\_\_\*\*** branch
-Run the following command at the location where the pom.xml file is present that is (group01/Backend/)
 
 ```shell
-mvn clean install compile
+$ npm react-native run-android
 ```
 
-Then execute the following command to run the services
-
-```shell
-mvn spring-boot:run
-```
-
-You will be able to notice that the application has started to run on port 8085
-To test if the services are up and running, click on the following link:
-[Test Service](http://localhost:8085/user/message)
-
-### Use Case Scenario
+## Use Case Scenario
 
 #### Onboarding Screen
 
@@ -224,30 +184,10 @@ If the user finds the pet then he can select the option ‘Found?’ and then th
 <br />
 If you click on the third icon it will direct you to the profile settings page, see above figure. Here, it shows the options of updating the ‘Personal Details’, ‘Your Posts’, update ‘Pet Details’, ‘Notification’ access, and ‘Delete Account’ options. If you are not using the app frequently then you can also click on the ‘Logout’ option and it will log out of your account.
 
-### Coverage Information
+## Team
 
-[![Code Coverage](https://i.postimg.cc/pr8vL7fK/Whats-App-Image-2023-04-09-at-10-45-09-PM.jpg)](https://postimg.cc/T5RFktHP)
-
-### Unit Test Cases
-
-[![Unit Test Cases](https://i.postimg.cc/httYC6XM/Whats-App-Image-2023-04-09-at-10-45-25-PM.jpg)](https://postimg.cc/Cz9J5vHf)
-
-### Integration Test Suite
-
-[![Integration Test Suite](https://i.postimg.cc/gJFNPT2C/Whats-App-Image-2023-04-09-at-11-15-05-PM.jpg)](https://postimg.cc/Ty0rVQm0)
-
-### Development Team
-
-- Group 1
-
-### Contributors
-
-- [Jeet Mehta](mailto:jt429386@dal.ca) Banner Id: B00945900
-- [Sankeerth Rani](mailto:sn501304@dal.ca) Banner Id: B00932027
-- [Dhruvin Dankhara](mailto:dh793203@dal.ca) Banner Id: B00926164
-- [Parshva Shah](mailto:pr371441@dal.ca) Banner Id: B00928689
-- [Lokeshwar Tabjula](mailto:lk544219@dal.ca) Banner Id: B00936909
-
-### TA
-
-- [Anirudh Hosur](mailto:an516658@dal.ca)
+- [Jeet Mehta](https://github.com/Jeet989) - Banner Id: B00945900
+- [Sankeerth Rani](https://github.com/) - Banner Id: B00932027
+- [Dhruvin Dankhara](https://github.com/) - Banner Id: B00926164
+- [Parshva Shah](https://github.com/) - Banner Id: B00928689
+- [Lokeshwar Tabjula](https://github.com/lokeshwartabjula) - Banner Id: B00936909
