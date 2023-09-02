@@ -195,7 +195,7 @@ If you click on the third icon it will direct you to the profile settings page, 
 ## Team
 
 - [Jeet Mehta](https://github.com/Jeet989) - Banner Id: B00945900
-- [Sankeerth Rani](https://github.com/) - Banner Id: B00932027
-- [Dhruvin Dankhara](https://github.com/) - Banner Id: B00926164
-- [Parshva Shah](https://github.com/) - Banner Id: B00928689
+- [Sankeerth Rani](https://github.com/SankeerthSharmaR) - Banner Id: B00932027
+- [Dhruvin Dankhara](https://github.com/DhruvinDankhara) - Banner Id: B00926164
+- [Parshva Shah](https://github.com/Parshva00) - Banner Id: B00928689
 - [Lokeshwar Tabjula](https://github.com/lokeshwartabjula) - Banner Id: B00936909
