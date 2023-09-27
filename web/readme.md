@@ -219,11 +219,11 @@ If you click on the third icon it will direct you to the profile settings page, 
 
 ### Contributors
 
-- [Jeet Mehta](mailto:jt429386@dal.ca) Banner Id: B00945900
-- [Sankeerth Rani](mailto:sn501304@dal.ca) Banner Id: B00932027
-- [Dhruvin Dankara](mailto:dh793203@dal.ca) Banner Id: B00926164
-- [Parshva Shah](mailto:pr371441@dal.ca) Banner Id: B00928689
-- [Lokeshwar Tabjula](mailto:lk544219@dal.ca) Banner Id: B00936909
+- [Jeet Mehta](https://github.com/Jeet989) - Banner Id: B00945900
+- [Sankeerth Rani](https://github.com/SankeerthSharmaR) - Banner Id: B00932027
+- [Dhruvin Dankhara](https://github.com/DhruvinDankhara) - Banner Id: B00926164
+- [Parshva Shah](https://github.com/Parshva00) - Banner Id: B00928689
+- [Lokeshwar Tabjula](https://github.com/lokeshwartabjula) - Banner Id: B00936909
 
 ### TA
 
