@@ -207,11 +207,11 @@ If the user finds the pet then he can select the option ‘Found?’ and then th
 <br />
 If you click on the third icon it will direct you to the profile settings page, see above figure. Here, it shows the options of updating the ‘Personal Details’, ‘Your Posts’, update ‘Pet Details’, ‘Notification’ access, and ‘Delete Account’ options. If you are not using the app frequently then you can also click on the ‘Logout’ option and it will log out of your account.
 
-##### [Presentation Link](https://git.cs.dal.ca/courses/2023-winter/csci-5308/group01/-/tree/production)
+<!-- ##### [Presentation Link](https://git.cs.dal.ca/courses/2023-winter/csci-5308/group01/-/tree/production)
 
 ##### [Contribution Statement Link](https://git.cs.dal.ca/courses/2023-winter/csci-5308/group01/-/tree/production)
 
-##### [Project Assessment Sheet Link](https://git.cs.dal.ca/courses/2023-winter/csci-5308/group01/-/tree/production)
+##### [Project Assessment Sheet Link](https://git.cs.dal.ca/courses/2023-winter/csci-5308/group01/-/tree/production) -->
 
 ### Development Team
 
